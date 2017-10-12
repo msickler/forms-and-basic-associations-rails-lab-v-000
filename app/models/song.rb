@@ -3,7 +3,6 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   has_many :notes
 
-  accepts_nested_attributes_for :notes
 
   def artist_name
     self.artist.name if self.artist
